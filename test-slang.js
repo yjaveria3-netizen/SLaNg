@@ -12,7 +12,7 @@ import {
 // ============================================================================
 // EXAMPLE EQUATIONS
 // ============================================================================
-
+///////////////// chuchu loves to multiply when he sees curly brackitooo and add when he sees arraysss
 // Example 1: (1 + x^2)(1 - y^2)
 const example1 = [
     [
@@ -147,5 +147,4 @@ console.log('');
 console.log('========================================');
 console.log('All tests complete!');
 console.log('========================================');
-
 export { example1, example2, example3, example4 };
