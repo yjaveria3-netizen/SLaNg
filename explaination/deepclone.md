@@ -1,4 +1,4 @@
-# Deep Clone Utility
+# deepClone Utility
 
 A simple utility function to create deep copies of objects in JavaScript.
 
