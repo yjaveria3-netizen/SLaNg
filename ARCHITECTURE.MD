@@ -14,15 +14,15 @@
 │                    HELPER LAYER                                 │
 │                  (slang-helpers.js)                             │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │  polynomial  │  │  sum         │  │ integralValue│         │
-│  │  Easy create │  │  Easy create │  │  One-liner   │         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │  polynomial  │  │  sum         │  │ integralValue│           │
+│  │  Easy create │  │  Easy create │  │  One-liner   │           │
+│  └──────────────┘  └──────────────┘  └──────────────┘           │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │volumeUnder   │  │ areaOfRegion │  │verification  │         │
-│  │  Surface     │  │              │  │   tools      │         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │volumeUnder   │  │ areaOfRegion │  │verification  │           │
+│  │  Surface     │  │              │  │   tools      │           │
+│  └──────────────┘  └──────────────┘  └──────────────┘           │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               │ uses
@@ -31,15 +31,15 @@
 │                     CORE LAYER                                  │
 │                   (slang-math.js)                               │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │ createTerm   │  │ integrate    │  │ differentiate│         │
-│  │ createFrac   │  │ Fraction     │  │  Fraction    │         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
+│    │ createTerm   │  │ integrate    │  │ differentiate│         │
+│    │ createFrac   │  │ Fraction     │  │  Fraction    │         │
+│    └──────────────┘  └──────────────┘  └──────────────┘         │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │ evaluate     │  │ expand       │  │  simplify    │         │
-│  │ Equation     │  │ Product      │  │  Fraction    │         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
+│    │ evaluate     │  │ expand       │  │  simplify    │         │
+│    │ Equation     │  │ Product      │  │  Fraction    │         │
+│    └──────────────┘  └──────────────┘  └──────────────┘         │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               │ uses
@@ -48,20 +48,20 @@
 │                   ADVANCED LAYER                                │
 │                 (slang-advanced.js)                             │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │ product      │  │ quotient     │  │ integration  │         │
-│  │ Rule         │  │ Rule         │  │ by Parts     │         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
+│    │ product      │  │ quotient     │  │ integration  │         │
+│    │ Rule         │  │ Rule         │  │ by Parts     │         │
+│    └──────────────┘  └──────────────┘  └──────────────┘         │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │ Taylor       │  │ critical     │  │ gradient     │         │
-│  │ Series       │  │ Points       │  │ & directional│         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
+│    │ Taylor       │  │ critical     │  │ gradient     │         │
+│    │ Series       │  │ Points       │  │ & directional│         │
+│    └──────────────┘  └──────────────┘  └──────────────┘         │
 │                                                                 │
-│  ┌──────────────┐  ┌──────────────┐                           │
-│  │ arc          │  │ surface      │                           │
-│  │ Length       │  │ Area         │                           │
-│  └──────────────┘  └──────────────┘                           │
+│    ┌──────────────┐  ┌──────────────┐                           │
+│    │ arc          │  │ surface      │                           │
+│    │ Length       │  │ Area         │                           │
+│    └──────────────┘  └──────────────┘                           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -121,20 +121,20 @@ HELPER LAYER (slang-helpers.js):
 ```
 EQUATION (Top level - Array)
 │
-├─ PRODUCT 1 (Array) ────────────────┐
-│  │                                 │
-│  ├─ FRACTION 1                     │ Products are summed
-│  │  ├─ numerator (numi)            │ (a)(b) + (c)(d) + ...
-│  │  │  └─ terms (Array)            │
-│  │  │     ├─ TERM 1 ───┐           │
-│  │  │     │  ├─ coeff  │           │
-│  │  │     │  └─ var {} │           │
+├─ PRODUCT 1 (Array)  ────────────────┐
+│  │                                  │
+│  ├─ FRACTION 1                      │ Products are summed
+│  │  ├─ numerator (numi)             │ (a)(b) + (c)(d) + ...
+│  │  │  └─ terms (Array)             │
+│  │  │     ├─ TERM 1 ───┐            │
+│  │  │     │  ├─ coeff  │            │
+│  │  │     │  └─ var {} │            │
 │  │  │     │            Terms        │
-│  │  │     ├─ TERM 2    are added   │
-│  │  │     │  ├─ coeff  │           │
-│  │  │     │  └─ var {} │           │
-│  │  │     │            ▼           │
-│  │  │     └─ TERM 3   Sum          │
+│  │  │     ├─ TERM 2    are added    │
+│  │  │     │  ├─ coeff  │            │
+│  │  │     │  └─ var {} │            │
+│  │  │     │            ▼            │
+│  │  │     └─ TERM 3   Sum           │
 │  │  │        ├─ coeff               │
 │  │  │        └─ var {}              │
 │  │  │                               │
